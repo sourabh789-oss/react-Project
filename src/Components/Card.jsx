@@ -1,9 +1,11 @@
+
 import React, { useContext, useState, useEffect } from "react";
 import { AppData } from "../Context/ApplicationData";
 import "../index.css";
 
 const Card = () => {
   const { data, setData } = useContext(AppData); 
+  const cardsPerPage = 6;
   const pageButtons = 3;
 
   const [currentPage, setCurrentPage] = useState(1);
@@ -14,7 +16,7 @@ const Card = () => {
   const startIndex = (currentPage - 1) * cardsPerPage;
   const currentCards = data.slice(startIndex, startIndex + cardsPerPage);
 
- 
+  
   useEffect(() => {
     if (currentPage > totalPages && totalPages > 0) {
       setCurrentPage(totalPages);
