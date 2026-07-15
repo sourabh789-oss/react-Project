@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+   margin: 2rem;
+   
+}
+
+.hidProperty{
+   display: -webkit-box;
+  -webkit-line-clamp: 3;        /* Changes the dots to appear after 3 lines */
+  -webkit-box-orient: vertical;  
+  overflow: hidden;       
+}
