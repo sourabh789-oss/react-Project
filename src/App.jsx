@@ -17,7 +17,7 @@ function App() {
 
       setLoader(false);
       fetchData();
-    }, 1000)
+    }, 5000)
 
     return () => clearTimeout(d);
   }, []);

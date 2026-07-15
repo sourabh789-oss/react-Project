@@ -19,7 +19,7 @@ const [data,setData]=useState([]);
      
   }
 
-    return <AppData.Provider value={{loader,setLoader,fetchData,data}}>{children}</AppData.Provider>
+    return <AppData.Provider value={{loader,setLoader,fetchData,data,setData}}>{children}</AppData.Provider>
 }
 
 
